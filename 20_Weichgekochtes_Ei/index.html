@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weichgekochtes Ei</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <form id="inputForm">
+            <label for="inputForm.temperatureYolkEnd">Endtemperatur Eigelb</label><br>
+            <input name="temperatureYolkEnd" type="number" value="62"><br>
+
+            <label for="inputForm.massOfEgg">Masse des Eis</label><br>
+            <input name="massOfEgg" type="number" value="57"><br>
+
+            <label for="inputForm.altitude">Höhe über NN</label><br>
+            <input name="altitude" type="number" value="1063"><br>
+
+            <input type="button" onclick="calculateBoilingTime()" value="Berechne Kochzeit"><br>
+        </form>
+
+        <div>
+            <h2>Kochzeit in Minuten:</h2>
+            <p id="boilingTime"></p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

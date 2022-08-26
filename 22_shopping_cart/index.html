@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Einkaufswagen</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <form>
+            <label for="productNameInput">Produkt:</label>
+            <input id="productNameInput" type="text"><br>
+            <label for="productPriceInput">Preis</label>
+            <input id="productPriceInput" type="number" step="0.01"><br>
+            <input type="button" value="Übernehmen" onclick="inputData()">
+            <input type="button" value="Zur Kasse" onclick="checkout()"><br>
+        </form>
+
+        <div>
+            <table id="outputTable">
+
+            </table>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
