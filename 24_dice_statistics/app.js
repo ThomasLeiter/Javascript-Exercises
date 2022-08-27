@@ -22,9 +22,13 @@ function createDiceStats(){
     return frequency;
 }
 
+function outputDiceRollAsImage(where, number){
+    where.innerHTML = `<img src="images/dice${number}.png" width="160" height="160">`;
+}
+
 function outputData(){
     let lastDiceRoll = diceRolls[diceRolls.length - 1];
-    outputDiceRoll.innerHTML = `<h1>${lastDiceRoll}</h1>`;
+    outputDiceRollAsImage(outputDiceRoll, lastDiceRoll);
 
     outputDiceRollArray.innerHTML = diceRolls.toString();
 
